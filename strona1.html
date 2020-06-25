@@ -1,0 +1,103 @@
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript" src="http://latex.codecogs.com/latexit.js"></script>
+<title> Kostka Rubika</title>
+<style type="text/css">
+a {
+ color: navy;
+ text-decoration: none;
+}
+header { background: #FFEFD5; width:100%; height: 3%; clear: both; 
+	margin: 0px;
+	padding: 0px;
+	font-family: calibri; } 
+ footer { background: #FFEFD5; width:100%; height: 3%; clear: both; 
+	margin: 0px;
+	padding: 0px;
+	font-family: calibri;}
+section { background: #FFEFD5; width:100%; height: 90%; clear: both; 
+	margin: 0px;
+	padding: 0px;
+	font-family: calibri}
+</style>
+</head>
+<body style="background-color: #FFEFD5; color: black">
+<header>
+<center>
+	<p style="word-spacing: none; ">
+	<a href="strona.html"><img src="1.png"; width="250px"></a>  
+	<img src="2.png"; width="250px">
+	<a href="strona2.html"><img src="3.png"; width="250px"></a>
+	<a href="strona3.html"><img src="4.png"; width="250px"></a>
+	<a href="strona4.html"><img src="5.png"; width="250px"></a>
+	<a href="strona5.html"><img src="6.png"; width="250px"></a>
+</center>
+</header>
+<section>
+<span style="font-family: calibri">
+<center><h1>Kostka Rubika w teorii grup</h1></center> 
+
+<p>Grupa z definicji to zbiór z określonym na nim dwuargumentowym działaniem wewnętrznym &bull;, 
+
+spełniającym następujące warunki:
+<ul>
+	<li>Działanie &bull; jest wewnętrzne np. dla dowolnych dwóch elementów a i b &isin; G, a&bull;b również należy do zbioru G 
+
+	<li>Działanie &bull; jest łączne, tzn. dla elementów a, b, c zachodzi: (a &bull; b)&bull; c = a &bull;(b &bull; c) 
+
+	<li>Istnieje element neutralny e taki, że e &bull; g = g &bull; e = g 
+
+	<li>Każdy g należący do G ma swoją odwrotność g<sup>-1</sup>, tak że g &bull; g<sup>-1</sup> = e 
+</ul>
+	<p>Kostka Rubika jest grupą permutacji, a działaniem jest wykonywanie ruchów na kostce. 
+	Na stronie będę pomijał znak &bull; opisując ruchy na kostce.
+	Układanka spełnia wszystkie powyższe warunki:
+<ul>
+	<li>Na przykład ruch R i ruch U należą do zbioru wszystkich permutacji kostki, 
+	tak samo R U, również należy do tego zbioru.
+	<li>Ruchy R (U R') dają taki sam efekt jak (R U) R', więc ruchy można dowolnie grupować
+	<li>Element neutralny e to ułożona kostka, lub inaczej nie wykonanie żadnego ruchu.
+	<li>Każdy ruch ma swoją odwrotność, np. U i U', D i D', U2 i U2, 
+	wykonanie dwóch odwrotnych ruchów daje ułożoną kostkę np, R R' = e
+</ul>
+</p>
+
+<h3>Własności grup:</h3> 
+<ul>
+	<li>Element neutralny e jest jeden 
+	<li>Jeśli a &bull; b = e, to a = b<sup>-1</sup> 
+	<li>Jeśli a &bull; x = b &bull; x, to a = b 
+	<li>Odwrotnością a &bull; b jest b<sup>-1</sup> &bull; a<sup>-1</sup>
+</ul>
+
+<h3>Przykłady grup:</h3> 
+<ul>
+	<li>Grupa dodawania liczb całkowitych: element neutralny to 0, a odwrotnością danego elementu jest liczba do niej przeciwna.  
+
+	<li>Grupa mnożenia liczb wymiernych z wykluczeniem zera, element neutralny to 1, a odwrotnością liczby
+	 <span lang="latex"> x</span> 
+	 jest <sub><span lang="latex"> \frac{1}{x}</span></sub>
+</ul>
+
+	Do tego kostka Rubika nie jest grupą, 
+	w której zachodzi przemienność tak jak w przypadku na przykład grupy dodawania liczb całkowitych gdzie, a + b = b + a. 
+	Grupę, która jest przemienna nazywamy abelową, a taką która nie jest nazywamy nieabelową. 
+	Przykładem grupy nieabelowej jest właśnie kostka Rubika, ponieważ np. <sub><span lang="latex">R U \neq U R</span></sub>
+	<h3>Podgrupy</h3>
+	Podgrupą nazywamy zbiór elementów danej grupy, który sam tworzy grupę z działaniem grupy wyjściowej. Czyli na Kostce Rubika
+	będzie to zbiór pewnych ruchów na kostce (nie wszystkich). Na przykład możemy stworzyć podgrupę ruchu F, będzie ona zawierała 4 
+	permutacje:<br> ułożoną kostkę, kostkę po wykonaniu ruchu F raz, dwa razy i trzy razy. <br>
+	Innym przykładem może być podgrupa stworzona przez ruchy F2 i R2 -  będzie zawierała 12 różnych permutacji. 
+	<p><b>Twierdzenie Lagrange'a</b></p>
+	Mówi, że w grupie skończonej rząd dowolnej jej podgrupy jest dzielnikiem rzędu grupy.<br>
+	Czyli wynika z tego, że liczba permutacji w danej podgrupie Kostki Rubika musi być dzielnikiem
+	<a href="strona2.html">liczby jej wszystkich permutacji.</a></p>
+</section>
+<footer>
+	<hr>
+	<span style="float:right;">Mateusz Szulik</span>
+</footer>
+</span>
+</body>
+</html>  
