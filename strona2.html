@@ -1,0 +1,82 @@
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript" src="http://latex.codecogs.com/latexit.js"></script>
+<title> Kostka Rubika</title>
+<style type="text/css">
+a {
+ color: navy;
+ text-decoration: none;
+}
+header { background: #FFEFD5; width:100%; height: 3%; clear: both; 
+	margin: 0px;
+	padding: 0px;
+	font-family: calibri; } 
+ footer { background: #FFEFD5; width:100%; height: 3%; clear: both; 
+	margin: 0px;
+	padding: 0px;
+	font-family: calibri;}
+section { background: #FFEFD5; width:100%; height: 90%; clear: both; 
+	margin: 0px;
+	padding: 0px;
+	font-family: calibri}
+</style>
+</head>
+<body style="background-color: #FFEFD5; color: black">
+<span style="font-family: calibri">
+<header><center>
+<p style="word-spacing: none; ">
+	<a href="strona.html"><img src="1.png"; width="250px"></a>  
+	<a href="strona1.html"><img src="2.png"; width="250px"></a> 
+	<img src="3.png"; width="250px">
+	<a href="strona3.html"><img src="4.png"; width="250px"></a>
+	<a href="strona4.html"><img src="5.png"; width="250px"></a>
+	<a href="strona5.html"><img src="6.png"; width="250px"></a>
+</p>
+</center></p></header>
+<section>
+<center><h1>Liczba permutacji</h1></center> 
+
+Jak wspominałem Kostka Rubika jest grupą permutacji. Każda grupa składa się z pewnego zbioru.
+Zatem jak duży jest ten zbiór w tym przypadku?
+Obliczmy liczbę wszystkich permutacji Kostki Rubika:<br>
+<ul>
+<li>Mamy 12 dwukolorowych krawędzi, zatem liczba ich permutacji to 12!, 
+są dwukolorowe więc każda może być obrócona na 2 sposoby, czyli wszystkie mogą być ułożone na 2<sup>12</sup> sposobów
+<li>Mamy 8 trójkolorowych narożników, zatem liczba ich permutacji to 8!,
+są trójkolorowe, więc każdy może być obrócony na 3 sposoby, czyli wszystkie mogą być ułożone na 3<sup>8</sup> sposobów
+</ul>
+<br>Łącząc te informacje otrzymujemy <span lang="latex">12! \cdot 2^{12}\cdot 8!\cdot 3^{8}= 5.1902403929\cdot10^{20}</span>
+<br>
+<p>Niestety nie jest to poprawny wynik...
+Okazuje się że tylko 1/12 z tych permutacji jest poprawna, <a href="strona3.html">co przedstawię w dalszej części strony</a>
+<p>Na ten moment otrzymujemy: <span lang="latex">\frac{12! \cdot 2^{12}\cdot 8!\cdot 3^{8}}{12}= 4.3252003274\cdot10^{19}</span>
+<br> Czyli wszystkich permutacji Kostki Rubika jest ponad 43 tryliony.</p>
+<p>Liczba jest ogromna, mimo to okazuje się, że optymalne rozwiązanie, każdej z tych permutacji ma pewną maksymalną liczbę ruchów.<br>
+Liczba ta nazywana jest <b>God's number</b> z angielskiego "Boska liczba" i wynosi 20. Oznacza to, że optymalne rozwiązanie każdego stanu na Kostce
+może mieć 20 ruchów lub mniej. <br>Aktualny rekord świata w konkurencji Fewest moves, polegającej na ułożeniu Kostki Rubika w jak najmniej ruchów wynosi 16.<br>
+"God's number" został oszacowany już w 1981 roku, nie było to jednak bardzo dokładne oszacowanie, 
+Morwen Thistlethwaite oszacował, że mieści się on w przedziale od 18 do 52
+W 1995 roku ustalono że liczba ta mieści się między 20, a 29. <br>
+Ostatecznie w roku 2010, za pomocą komputerów Tomas Rokicki, Herbert Kociemba, Morley Davidson i John Dethridge
+wykazali, że "God's Number" jest równy dokładnie 20. 
+<div style="width:800px; height:auto; margin:0px auto; float:left;">
+	Zdjęcie po prawej stronie przedstawia ile jest rozwiązań o optymalnym rozwiązaniu w danej liczbie ruchów.
+	<p>Jak widać rozwiązań 20 ruchowych nie jest aż tak dużo, najwięcej jest rozwiązań 18 ruchowych i 17 ruchowych.
+	<br>Chyba najbardziej znanym przykładem permutacji, która wymaga 20 ruchów do ułożenia jest "superflip". 
+	 Stan na kostce gdzie wszystkie elementy są na swoim miejscu i wszystkie 12 krawędzi jest obrócone.<br>
+	<img src="superflip.png"></p>
+	20 ruchowe rozwiązanie tego stanu kostki to:<br>
+	U R2 F B R B2 R U2 L B2 R U' D' R2 F R' L B2 U2 F2
+</div>
+<div style="width:200px; height:auto; margin:0px auto; float:center;">
+<img src="permutacje.png" height="430px">
+</div>
+</section>
+<footer>
+	<hr>
+	<span style="float:right;">Mateusz Szulik</span>
+</footer>
+</span>
+</body>
+</html>  

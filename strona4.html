@@ -1,0 +1,72 @@
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript" src="http://latex.codecogs.com/latexit.js"></script>
+<title> Kostka Rubika</title>
+<style type="text/css">
+a {
+ color: navy;
+ text-decoration: none;
+}
+header { background: #FFEFD5; width:100%; height: 3%; clear: both; 
+	margin: 0px;
+	padding: 0px;
+	font-family: calibri; } 
+ footer { background: #FFEFD5; width:100%; height: 7%; clear: both; 
+	margin: 0px;
+	padding: 0px;
+	font-family: calibri;}
+section { background: #FFEFD5; width:100%; height: 90%; clear: both; 
+	margin: 0px;
+	padding: 0px;
+	font-family: calibri}
+</style>
+</head>
+<body style="background-color: #FFEFD5; color: black">
+<header>
+<center>
+<p style="word-spacing: none; ">
+	<a href="strona.html"><img src="1.png"; width="250px"></a> 
+	<a href="strona1.html"><img src="2.png"; width="250px"></a> 
+	<a href="strona2.html"><img src="3.png"; width="250px"></a>
+	<a href="strona3.html"><img src="4.png"; width="250px"></a>
+	<img src="5.png"; width="250px">
+	<a href="strona5.html"><img src="6.png"; width="250px"></a>
+</p>
+</center>
+</header>
+<span style="font-family: calibri">
+<section>
+<center><h1>Komutatory</h1></center> 
+<br>
+Jak już wcześniej pisałem Kostka Rubika jako grupa jest nieabelowa, czyli nie zachodzi w niej przemienność. 
+W teorii grup istnieje pojęcie komutatora, który jest wskaźnikiem stopnia nieprzemienności.
+<p>Komutator dwóch elementów a i b &isin; G to: <br>
+[a,b] = a<sup>-1</sup>b<sup>-1</sup>ab<br>
+<p>Jeśli grupa jest przemienna to komutator jest równy elementowi neutralnemu grupy grupy np. przy dodawaniu: -1 -2 + 1 + 2 = 0</p>
+Dla Kostki Rubika <sub><span lang="latex">R U R' U' \neq e</span></sub><br>
+Gdzie e to element neutralny, czyli ułożona kostka. Wskazuje to na to, że grupa nie jest przemienna. </p>
+<p>Do układania Kostki Rubika można wykorzystywać komutatory. Komutator jak już pisałem to wyrażenie postaci:<br> 
+[a,b] = a<sup>-1</sup>b<sup>-1</sup>ab,<br> częściej jest jednak oznaczany jako:<br>
+ [a,b] = aba<sup>-1</sup>b<sup>-1</sup><br>
+</p>
+<p>Weźmy jako a i b pewne sekwencje z Kostki Rubika.
+<ul>
+<li>[R U R', D2] = R U R' D2 R U' R' D2<br>
+Wykonuje cykl (RUF DFR DBL)<br>
+<img src="k4.png" width="175px">
+ <li>[M', U2] = M' U2 M U2<br>
+ Wykonuje cykl (UF DF UB)<br>
+ <img src="k5.png" width="175px">
+ </ul>
+ Jak widać komutatory pozwalają ułożyć konkretne elementy na Kostce Rubika, nie psując reszty.
+ Komutatory są używane przede wszystkim w metodach pozwalających ułożyć kostkę bez patrzenia,
+ ponieważ układają konkretne elementy, nie wpływając na resztę układanki. 
+ </section
+<footer>
+	<hr>
+	<span style="float:right;">Mateusz Szulik</span>
+</footer>
+</span>
+</body>
+</html>
